@@ -3,7 +3,7 @@
  * Plugin Name: F1 Collapsible Shortcode
  * Description: Adds a [collapsible] shortcode for hiding and showing content. See * suggested.css for suggested styling.
  * Author: Forum One, Russell Heimlich
- * Version: 0.1
+ * Version: 0.1.1
  * GitHub Plugin URI: https://github.com/forumone/f1-collapsible-shortcode
  */
 
@@ -14,7 +14,7 @@ if ( shortcode_exists( 'collapsible' ) ) {
 
 class F1_Collapsible_Shortcode {
 
-	private $version = 0.1; // This should match the plugin version declared in the header ^^^
+	private $version = 0.1.1; // This should match the plugin version declared in the header ^^^
 	public function __construct() {}
 
 	/**
