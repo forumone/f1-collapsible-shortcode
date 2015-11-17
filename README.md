@@ -1,4 +1,4 @@
-# Table of Contents WordPress Plugin
+# Collapsible Shortcode WordPress Plugin
 
 This WordPress plugin adds a shortcode called `[collapsible]` which wraps content within a container to be toggled opened and closed. 
 
