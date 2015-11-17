@@ -41,6 +41,12 @@ class F1_Collapsible_Shortcode {
 	 * @return string          The new content with the approriate markup to make the collapsible action work.
 	 */
 	public function shortcode( $atts, $content ) {
+		// Check that $content contains atleast one heading. Otherwise bail!
+		preg_match( '/<h\d/i', $content, $has_heading );
+		if( empty( $has_heading ) ) {
+			return do_shortcode( $content );
+		}
+
 		wp_enqueue_script( 'f1-collapsible-shortcode' );
 		$collapsible_icon = apply_filters( 'f1_collapsible_icon', '<span aria-hidden="true" class="f1-collapsible-icon">&raquo;</span>' );
 
